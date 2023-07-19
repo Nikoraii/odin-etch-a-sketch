@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="./src/css/main.css">
 </head>
 <body>
-    <div id="container">
-    </div>
+    <main>
+        <div id="settings">
+            <div id="display">
+                <div id="screen">test</div>
+            </div>
+            <div id="buttons">
+                <input type="color" name="" id="color-picker">
+                <div>
+                    <button>UP</button>
+                    <div>screen</div>
+                    <button>down</button>
+                </div>
+                <button>ERASE</button>
+            </div>
+            <div id="mode">
+                <div>MODE</div>
+                <div id="button-row">
+                    <button>DRAW</button>
+                    <button>RAINBOW</button>
+                    <button>ERASE</button>
+                    <button>PICK</button>
+                </div>
+            </div>
+            <div id="grid-control">
+                <div>grid size</div>
+                <input type="range" name="grid-size" id="grid-size">
+            </div>
+            <div id="power">
+                <div>POWER</div>
+                <button>POWER</button>
+            </div>
+        </div>
+        <div id="grid-container">
+        </div>
+    </main>
 </body>
 </html>
