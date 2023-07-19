@@ -1,0 +1,31 @@
+@import url(settings/settings-main.css);
+
+body {
+    background-color: #CDCCCA;
+}
+
+main {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#grid-container {
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    outline: gray solid 1px;
+}
+
+.item {
+    background-color: #000;
+}
+
+.item:hover {
+    background-color: aqua;
+}

@@ -1,0 +1,19 @@
+@import url(screen.css);
+@import url(buttons/buttons.css);
+
+#settings {
+    display: grid;
+    grid-template-areas: 
+    'screen screen screen screen'
+    'buttons buttons buttons grid'
+    'mode mode mode grid'
+    'power power power grid';
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+
+#settings > div {
+    padding: 10px;
+    font-size: 20px;
+}

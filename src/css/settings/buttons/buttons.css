@@ -1,0 +1,26 @@
+@import url(color-picker.css);
+#grid-size {
+    appearance: slider-vertical;
+    height: 90%;
+}
+
+#buttons {
+    display: flex;
+    grid-area: buttons;
+    background-color: yellow;
+}
+
+#mode {
+    grid-area: mode;
+    background-color: blueviolet;
+}
+
+#grid-control {
+    grid-area: grid;
+    background-color: brown;
+}
+
+#power {
+    grid-area: power;
+    background-color: chartreuse;
+}
