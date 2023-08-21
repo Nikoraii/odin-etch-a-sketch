@@ -5,42 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch a Sketch</title>
     <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
 <body>
     <main>
         <div id="settings">
             <div id="display">
-                <div id="screen">test</div>
+                <div id="screen">
+                </div>
             </div>
             <div id="buttons">
-                <input type="color" name="" id="color-picker">
-                <div>
-                    <button>UP</button>
-                    <div>screen</div>
-                    <button>down</button>
+                <div id="color-picker-container">
+                    <input type="color" disabled name="color-picker" id="color-picker" value="#000000">
+                    <label for="color-picker">COLOR</label>
                 </div>
-                <button>ERASE</button>
+                <div id="opacity">
+                    <div>OPACITY</div>
+                    <div id="opacity-section">
+                        <button class="button opacity-change" disabled id="opacity-up">&#8593;</button>
+                        <div id="opacity-screen"></div>
+                        <button class="button opacity-change" disabled id="opacity-down">&#8595;</button>
+                    </div>
+                </div>
+                <div id="clear-container">
+                    <button id="clear" class="button">CLEAR</button>
+                </div>
             </div>
             <div id="mode">
                 <div>MODE</div>
                 <div id="button-row">
-                    <button>DRAW</button>
-                    <button>RAINBOW</button>
-                    <button>ERASE</button>
-                    <button>PICK</button>
+                    <button id="draw" class="button button-mode" disabled>DRAW</button>
+                    <button id="rainbow" class="button button-mode" disabled>RAINBOW</button>
+                    <button id="erase" class="button button-mode" disabled>ERASE</button>
+                    <button id="pick" class="button button-mode" disabled>PICK</button>
                 </div>
             </div>
             <div id="grid-control">
-                <div>grid size</div>
-                <input type="range" name="grid-size" id="grid-size">
+                <div>GRID SIZE</div>
+                <div id="grid-screen"></div>
+                <input type="range" disabled name="grid-size" id="grid-size" min="4" max="64" step="1" value="16">
             </div>
-            <div id="power">
+            <div id="power-container">
                 <div>POWER</div>
-                <button>POWER</button>
+                <button class="button" id="power"><i class="fa-solid fa-power-off"></i></button>
             </div>
         </div>
         <div id="grid-container">
         </div>
     </main>
+    <footer>
+        <p id="footer">&#169;<span id="year"></span> Made by <a id="git-link" href="https://github.com/Nikoraii" target="_blank">[Nikoraii]</a></p>
+    </footer>
+    <script type="module" src="./src/js/main.js"></script>
+    <script type="module" src="./src/js/components/footer/footer.js"></script>
 </body>
 </html>
