@@ -1,8 +1,8 @@
 # ETCH-A-SKETCH
 
-Etch a sketch project for [The Odin Project](https://www.theodinproject.com/)
+Etch a sketch project for [The Odin Project](https://www.theodinproject.com/).
 
-The project can be found [here](https://nikoraii.github.io/odin-etch-a-sketch/)
+The project can be found [here](https://nikoraii.github.io/odin-etch-a-sketch/).
 
 **Make sure to turn on the POWER button to draw.**
 
