@@ -1,31 +1,37 @@
 @import url(settings/settings-main.css);
+@import url(grid/grid-main.css);
 
 body {
     background-color: #CDCCCA;
+    font-family: 'Courier New', monospace;
+    height: 90vh;
 }
 
 main {
     display: flex;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
     padding: 30px;
     border: 1px solid black;
-    border-radius: 2px;
     width: fit-content;
     margin: 0 auto;
+    background-color: #8e866e;
+    border-radius: 5px;
+    margin-top: 25px;
 }
 
-#grid-container {
-    background-color: white;
-    width: 500px;
-    height: 500px;
-    outline: gray solid 1px;
+footer {
+    text-align: center;
+    margin-top: 300px;
 }
 
-.item {
-    background-color: #000;
+#git-link {
+    text-decoration: none;
+    font-weight: bold;
+    color: #b81010;
+    text-underline-offset: 5px;
 }
 
-.item:hover {
-    background-color: aqua;
+#git-link:hover {
+    text-decoration: underline;
 }

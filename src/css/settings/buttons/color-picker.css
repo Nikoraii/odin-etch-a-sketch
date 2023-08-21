@@ -1,3 +1,10 @@
+#color-picker-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+}
+
 #color-picker {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -11,7 +18,9 @@
 
 #color-picker::-webkit-color-swatch {
     border-radius: 50%;
-    border: none;
+    border: 2px solid #696969;
+    outline: 3px solid #909090;
+    box-shadow: 0 0 5px rgba(0,0,0,.05), 2px 2px 5px rgba(0,0,0,.3);
 }
 #color-picker::-moz-color-swatch {
     border-radius: 50%;
