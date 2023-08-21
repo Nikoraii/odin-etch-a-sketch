@@ -1,0 +1,57 @@
+@font-face {
+    font-family: VT323;
+    src: url(../../assets/fonts/VT323/VT323-Regular.ttf);
+}
+
+#display {
+    width: 500px;
+    height: auto;
+    grid-area: screen;
+    background-color: black;
+    position: relative;
+    border: 10px solid #696969;
+    border-radius: 20% / 10%;
+    overflow: hidden;
+}
+
+.mini-display-on {
+  background-color: #132612!important;
+}
+
+.display-on {
+  background-color: #132612!important;
+  animation: flicker 0.15s infinite alternate;
+}
+
+.display-on::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../assets/images/scanlines.png");
+    background-origin: inherit;
+    mix-blend-mode: overlay;
+    opacity: 0.1;
+    pointer-events: none;
+  }
+  
+  @keyframes flicker {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0.95;
+    }
+  }
+
+#screen {
+  color: #00FF66;
+  width: 500px;
+  height: 200px;
+  font-family: VT323, monospace;
+  padding: 2px 5px;
+  white-space: pre-line;
+  margin-top: -5px;
+}
